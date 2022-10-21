@@ -4,12 +4,15 @@ import { useRoute } from 'vue-router';
 
 <template>
     <div class="navbar">
-        <router-link to="/">Sam Newby</router-link>
+        <router-link to="/" class="font-semibold text-3xl text-black">Sam Newby</router-link>
         <div class="right-nav">
-            <router-link to="/content">Content</router-link>
-            <router-link to="/content" class="hidden">About</router-link>
+            <router-link to="/content" class="right-nav-item">Content</router-link>
+            <router-link to="/content" class="right-nav-item hidden">About</router-link>
         </div>
     </div>
+    <p class="text-lg font-light text-slate-800">
+    Full-Stack Software Engineer at Tails.com from the UK, working with Python, JavaScript. Currently focused on learning Rust, improving my Python skills and building more serverless projects.
+    </p>
 </template>
 
 <style scoped>
@@ -18,5 +21,8 @@ import { useRoute } from 'vue-router';
 }
 .right-nav {
     @apply flex items-center ml-auto;
+}
+.right-nav-item {
+    @apply text-slate-600 font-light hover:font-base text-sm;
 }
 </style>
