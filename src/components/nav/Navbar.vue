@@ -23,6 +23,6 @@ import { useRoute } from 'vue-router';
     @apply flex items-center ml-auto;
 }
 .right-nav-item {
-    @apply text-slate-600 font-light hover:font-base text-sm;
+    @apply text-slate-600 font-light hover:font-normal text-sm;
 }
 </style>
