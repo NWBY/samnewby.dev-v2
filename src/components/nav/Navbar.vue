@@ -17,12 +17,12 @@ import { useRoute } from 'vue-router';
 
 <style scoped>
 .navbar {
-    @apply flex items-center py-5;
+    @apply flex items-center py-5 md:pt-20;
 }
 .right-nav {
     @apply flex items-center ml-auto;
 }
 .right-nav-item {
-    @apply text-slate-600 font-light hover:font-normal text-sm;
+    @apply text-green-600 font-light hover:font-normal text-sm;
 }
 </style>
